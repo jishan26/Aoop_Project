@@ -54,13 +54,13 @@ public class Signup {
     private RadioButton userTypeRadio;
 
     @FXML
-    void handleSignIn(ActionEvent event) {
-
+    void handleSignIn(ActionEvent event) throws Exception {
+        main.login();
     }
 
     @FXML
-    void handleSignUp(ActionEvent event) {
-
+    void handleSignUp(ActionEvent event) throws Exception {
+        main.signup();
     }
 
     @FXML

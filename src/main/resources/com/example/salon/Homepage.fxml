@@ -37,7 +37,7 @@
                     <Button style="-fx-background-color: #e74c3c; -fx-background-radius: 22; -fx-font-size: 14px; -fx-cursor: hand; -fx-padding: 10 20 10 20; -fx-effect: dropshadow(three-pass-box, rgba(231,76,60,0.4), 8, 0, 0, 2);" text="Book Now" textFill="white" />
                     <Button fx:id="loginIconBtn"
                             style="-fx-background-color: transparent; -fx-font-size: 22px; -fx-cursor: hand; -fx-text-fill: white;"
-                            text="🙍‍♂️">
+                            text="🙍‍♂️" onAction="#goToLogin">
                         <tooltip>
                             <Tooltip text="Login"/>
                         </tooltip>

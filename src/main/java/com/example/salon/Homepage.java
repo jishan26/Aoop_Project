@@ -68,4 +68,9 @@ public class Homepage {
         servicesScrollPane.setHvalue(Math.min(1, current + 0.2));
     }
 
+    @FXML
+    void goToLogin(ActionEvent event) throws Exception {
+        this.main.login();
+    }
+
 }
