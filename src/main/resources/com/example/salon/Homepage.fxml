@@ -12,6 +12,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
+<?import javafx.scene.control.Tooltip?>
 <ScrollPane fitToWidth="true" hbarPolicy="NEVER" pannable="true" vbarPolicy="AS_NEEDED" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.salon.Homepage">
 
     <content>
@@ -34,6 +35,13 @@
                     <Button style="-fx-background-color: transparent; -fx-font-size: 14px; -fx-cursor: hand;" text="Services" textFill="white" />
                     <Button style="-fx-background-color: transparent; -fx-font-size: 14px; -fx-cursor: hand;" text="About" textFill="white" />
                     <Button style="-fx-background-color: #e74c3c; -fx-background-radius: 22; -fx-font-size: 14px; -fx-cursor: hand; -fx-padding: 10 20 10 20; -fx-effect: dropshadow(three-pass-box, rgba(231,76,60,0.4), 8, 0, 0, 2);" text="Book Now" textFill="white" />
+                    <Button fx:id="loginIconBtn"
+                            style="-fx-background-color: transparent; -fx-font-size: 22px; -fx-cursor: hand; -fx-text-fill: white;"
+                            text="🙍‍♂️">
+                        <tooltip>
+                            <Tooltip text="Login"/>
+                        </tooltip>
+                    </Button>
                 </children>
                 <HBox.margin>
                     <Insets right="35.0" />

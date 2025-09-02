@@ -7,11 +7,14 @@ import javafx.scene.control.ScrollPane;
 import javafx.scene.layout.HBox;
 
 public class Homepage {
+
     public Main main;
 
     public void setMain(Main main) {
         this.main = main;
     }
+    @FXML
+    private Button loginIconBtn;
 
     @FXML
     private HBox salonCardsContainer;
@@ -37,24 +40,32 @@ public class Homepage {
     @FXML
     private ScrollPane servicesScrollPane;
 
+    // Scrolls the salon cards to the left
     @FXML
     void scrollSalonLeft(ActionEvent event) {
-
+        double current = salonScrollPane.getHvalue();
+        salonScrollPane.setHvalue(Math.max(0, current - 0.2));
     }
 
+    // Scrolls the salon cards to the right
     @FXML
     void scrollSalonRight(ActionEvent event) {
-
+        double current = salonScrollPane.getHvalue();
+        salonScrollPane.setHvalue(Math.min(1, current + 0.2));
     }
 
+    // Scrolls the services cards to the left
     @FXML
     void scrollServicesLeft(ActionEvent event) {
-
+        double current = servicesScrollPane.getHvalue();
+        servicesScrollPane.setHvalue(Math.max(0, current - 0.2));
     }
 
+    // Scrolls the services cards to the right
     @FXML
     void scrollServicesRight(ActionEvent event) {
-
+        double current = servicesScrollPane.getHvalue();
+        servicesScrollPane.setHvalue(Math.min(1, current + 0.2));
     }
 
 }

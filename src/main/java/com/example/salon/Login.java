@@ -8,16 +8,12 @@ import javafx.scene.control.Hyperlink;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 
-import java.io.IOException;
-
 public class Login {
-
     public Main main;
 
     public void setMain(Main main) {
         this.main = main;
     }
-
     @FXML
     private Hyperlink createAccountLink;
 
@@ -37,8 +33,8 @@ public class Login {
     private CheckBox rememberMeCheck;
 
     @FXML
-    void handleCreateAccount(ActionEvent event) throws IOException {
-          this.main.signup();
+    void handleCreateAccount(ActionEvent event) {
+
     }
 
     @FXML
